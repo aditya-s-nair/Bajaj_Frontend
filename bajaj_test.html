@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABCD123</title> <!-- Replace with your actual roll number -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .error {
+            color: red;
+            margin-top: 10px;
+        }
+
+        select, textarea, button {
+            width: 100%;
+            margin-top: 10px;
+            padding: 10px;
+        }
+
+        .response {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e7f3e7;
+            border: 1px solid #bcd8bc;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Process JSON Data</h1>
+    <textarea id="jsonInput" placeholder='Enter JSON like {"data": ["A","C","z"]}' rows="4"></textarea>
+    <button id="submitBtn">Submit</button>
+    <div class="error" id="error"></div>
+    
+    <select id="options" multiple style="display:none;">
+        <option value="alphabets">Alphabets</option>
+        <option value="numbers">Numbers</option>
+        <option value="highest_lowercase_alphabet">Highest Lowercase Alphabet</option>
+    </select>
+
+    <div class="response" id="response"></div>
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
